@@ -3,11 +3,11 @@
 #include "Adafruit_SGP30.h"//SGP30空气检测
 
 //*********DHT11*********//
-#define DHTTYPE DHT11 //定义类型，DHT11或者其它
+#define DHTTYPE DHT11 //定义类型，DHT11
 #define DHTPIN 2//定义D4的TXD1输入数据
 DHT dht(DHTPIN, DHTTYPE);
 
-Adafruit_SGP30 sgp;
+Adafruit_SGP30 sgp;//SDA---D2和SLC-----D1
 
 void setup() {
   Serial.begin(115200);               // 启动串口通讯
